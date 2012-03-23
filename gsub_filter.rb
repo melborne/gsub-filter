@@ -1,6 +1,5 @@
 # encoding: UTF-8
-class SubFilter
-  VERSION = '0.1.0'
+class GsubFilter
   attr_reader :stocks, :filters
   def initialize(input=nil)
     @input = input
@@ -42,19 +41,4 @@ class SubFilter
     end
     opt
   end
-end
-
-if __FILE__ == $0
-  str =<<EOS
-hello, world
-this is title.
-Goodbye, universe
-that is also title.
-EOS
-  sf = SubFilter.new(str)
-  sf.filter(/\b(t\w+)/) { |md, stocks| stocks[:from_t] << md[1]; md[1].capitalize }
-  sf.filter(/\b(\w+e)([^\w])/) { |md, stocks| stocks[:end_e] << md[1]; md[1].upcase + md[2]}
-
-  p sf.run
-  p sf.stocks
 end
