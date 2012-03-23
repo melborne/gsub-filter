@@ -1,4 +1,6 @@
 # encoding: UTF-8
+require "gsub_filter/version"
+
 class GsubFilter
   attr_reader :stocks, :filters
   def initialize(input=nil)
