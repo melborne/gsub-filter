@@ -29,7 +29,7 @@ class GsubFilter
     str
   end
 
-  def opt_clear
+  def clear_stocks
     @stocks.clear
   end
 
