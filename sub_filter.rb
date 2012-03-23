@@ -1,5 +1,6 @@
 # encoding: UTF-8
 class SubFilter
+  VERSION = '0.1.0'
   attr_reader :stocks, :filters
   def initialize(input=nil)
     @input = input
