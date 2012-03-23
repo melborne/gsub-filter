@@ -1,0 +1,5 @@
+require "gsub_filter/version"
+
+module GsubFilter
+  # Your code goes here...
+end
