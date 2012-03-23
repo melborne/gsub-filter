@@ -1,6 +1,5 @@
 # encoding: UTF-8
-require "rspec"
-require_relative "gsub_filter"
+require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 describe GsubFilter do
   before do
